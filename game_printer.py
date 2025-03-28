@@ -18,15 +18,15 @@ class GamePrinter:
         self.live = live
         self.dead = dead
 
-    def print(self):
+    def print(self) -> None:
         """
         Prints the current state of the game.
         """
-        game = []
+        game_representation: list[str] = []
 
         for row in self.state:
             for is_alive in row:
-                game.append(self.live if is_alive else self.dead)
-            game.append("\n")
+                game_representation.append(self.live if is_alive else self.dead)
+            game_representation.append("\n")
 
-        print("".join(game))
+        print("".join(game_representation))
