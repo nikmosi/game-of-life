@@ -33,7 +33,6 @@
               check-yaml.enable = true;
               fix-byte-order-marker.enable = true;
               trufflehog.enable = true;
-              gptcommit.enable = true;
             };
           };
         };
